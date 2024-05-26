@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  min-width: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -9,7 +9,8 @@ body {
 .hero,
 .footer {
   background-color: #1f2937;
-  color: white;
+
+  font-size: 18px;
 }
 
 .hero {
@@ -20,12 +21,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0;
+  padding: 12px 0;
 }
 
-.title {
+.logo {
   font-size: 24px;
   font-weight: 800;
+  padding: 12px;
+  color: #f9faf8;
 }
 
 .links {
@@ -38,7 +41,7 @@ body {
 
 li a {
   text-decoration: none;
-  color: white;
+  color: #e5e7eb;
 }
 
 .hero_body {
@@ -50,14 +53,21 @@ li a {
 .hero_content {
   flex: 1;
   font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero_content > h1 {
+  font-size: 48px;
+  color: #f9faf8;
 }
 
 .hero_img {
   flex: 1;
 }
 
-.sign_up_button {
-  background-color: rgb(18, 150, 238);
+.sign_up_button,
+.action_button button {
+  background-color: #3882f6;
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
@@ -72,38 +82,92 @@ li a {
   object-fit: cover;
 }
 
-.info {
-  border: 1px solid rebeccapurple;
-}
-
 .info_title {
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
+  font-weight: bolder;
+  color: #1f2937;
 }
 
 .info_cards_wrapper {
   display: flex;
-  border: 1px solid teal;
   justify-content: center;
-  gap: 48px;
-  padding: 16px;
+  gap: 24px;
+  padding: 48px 0;
 }
 
 .card {
   max-width: 300px;
   max-height: 500px;
-  border: 1px solid red;
+}
+
+.card_img {
+  height: 200px;
+}
+
+.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card p {
+  text-align: center;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.card img {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-  border: 1px solid red;
+.quote div {
+  width: 50%;
+  font-style: italic;
+  font-size: 20px;
+  color: #1f2937;
 }
 
-.info_cards_wrapper > div:nth-child(3) {
-  object-fit: scale-down;
+.quote div:nth-child(2) {
+  margin-top: 4px;
+  text-align: right;
+  font-style: normal;
+}
+
+.action {
+  padding: 48px 0;
+}
+
+.action_bar {
+  background-color: #3882f6;
+  color: white;
+  width: 50%;
+  margin: auto;
+  padding: 2% 4%;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 4px;
+}
+
+.action_text strong {
+  font-size: 18px;
+}
+
+.action_button {
+  display: flex;
+  align-items: center;
+}
+
+.action_button button {
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 0;
+}
+
+.footer {
+  padding: 24px;
+  text-align: center;
 }
