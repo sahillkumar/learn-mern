@@ -1,7 +1,3 @@
----
-title: Learn mern
----
-
 # LEARN MERN
 
 A project landing page made Using HTML/CSS.
